@@ -1,18 +1,47 @@
-# vue-trello
+## 요구사항 분석
+###1. 인증
+* 로그인
+* 로그아웃
 
-> A Vue.js project
+###2. 보드작업
+* 보드
+	- 생성 O
+	- 조회 O
+	- 수정 O (타이틀 , 색상)
+	- 이동 X
+	- 삭제 O
+* 리스트
+	- 생성 O
+	- 조회 X
+	- 수정 O (타이틀)
+	- 이동 O
+	- 삭제 X
+* 카드
+	- 생성 O
+	- 조회 O
+	- 수정 O (타이틀, 설명)
+	- 이동 O
+	- 삭제 O
 
-## Build Setup
+###3. 기본 플로우
+* 홈페이지 접속 (비인가 요청은 로그인 페이지 이동)
+* 로그인 페이지 접속 : 로그인 실행
+* 홈페이지 리다이렉트
+* 보드 목록 조회
+* 보드 생성 : 생성한 보드 화면 이동
+* 보드 조회 : Todo, Doing, Done 리스트 자동 생성
+* 카드 생성 : 타이틀 입력
+* 카드 상세 조회 (모달)
+* 카드 수정 (모달 내) : 타이틀, 설명
+* 카드 이동1 : 리스트 내에서 이동
+* 카드 이동2 : 리스트 간에 이동
+* 카드 삭제
+* 보드 세팅(우측 사이드바) : 색상
+* 보드 삭제: 삭제 후 홈 페이지로 이동
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+###4. 추가기능
+* 보드 수정 : 색상, 타이틀
+* 리스트 생성
+* 리스트 수정 : 타이틀 변경
+* 리스트 이동
+* 리스트 삭제
