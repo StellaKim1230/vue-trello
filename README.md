@@ -1,4 +1,4 @@
-# vue-trello
+# vue-trello (인프런 - 트렐로 개발을 통한 Vuejs, Vuex, Vue-Router 실전 기술)
 ## 요구사항 분석
 ### 1. 인증
 * 로그인
